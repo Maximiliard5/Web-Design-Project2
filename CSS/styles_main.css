@@ -1,0 +1,431 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+header {
+    background: #006400; 
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+header h1 img{
+    height: 3vw;
+    width: 3vw;
+}
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative; 
+}
+
+header nav ul li a, .dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+/*Date*/
+#current-date-time {
+    font-size: 1em;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*dropdown menu*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #006400;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    z-index: 1;
+}
+
+.dropdown-content li{
+    display: block;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Toggle Dark Mode Button Style*/
+button.toggle-button {
+    background-color: #1d3603;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+    position: flex;
+    right: 1em;
+    top: 1em;
+}
+.dark-mode .toggle-button {
+    background-color: #fff;
+    color: #006400;
+}
+
+.dark-mode .toggle-button:hover {
+    background-color: #e0e0e0;
+}
+
+/*Toggle Dark Mode*/
+.dark-mode{
+    background-color: #212121;
+    color: #ECECEC;
+}
+.dark-mode header, .dark-mode nav ul li a, .dark-mode footer{
+    background-color: #1d3603;
+    color: #ECECEC;
+}
+.dark-mode #tips{
+    background-color: #2b2b2b;
+    color: #ECECEC;
+}
+
+/*trail grid*/
+#trails h2{
+    display: flex;
+    justify-content: center;
+}
+.trail-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 10px;
+}
+.trail1{
+    position: relative;
+    background-image: url('/images/Photos/obiective-masivul-rarau-06.JPG'); 
+    background-size: cover; 
+    background-position:center; 
+    color: #ffffff; 
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-blend-mode: darken; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease;
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+.trail2{
+    position: relative;
+    background-image: url('/images/Photos/varf_panorama1.JPG'); 
+    background-size: cover; 
+    background-position:center; 
+    color: #ffffff; 
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-blend-mode: darken; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease;
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.trail p{
+    margin: 0;
+}
+.trail1:hover{
+    transform: scale(1.08);
+}
+.trail2:hover{
+    transform: scale(1.08);
+}
+.trail1 p::before, .trail2 p::before {
+    content: "☆☆☆☆☆"; 
+    font-size: 2em;
+    color: #ffd700; 
+}
+
+.trail1 p a,.trail2 p a{
+    font-size: 1em;
+    color: #068006;
+    font-weight: bold;
+}
+.favorite-button{
+    background-color: rgb(187, 184, 184);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/*link color*/
+a{
+    color: inherit; 
+}
+
+/*hiking tips description*/
+#tips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; 
+    background-color: #f7f4ed; 
+    border-radius: 15px; /* Rounded edges */
+}
+#tips ol, #tips ul {
+    text-align: left; 
+}
+#tips ol li, #tips ul li {
+    display: fixed;
+    align-items: center;
+    text-align: center; 
+    display: list-item; 
+    list-style-position: inside; 
+}
+#tips ol li a{
+    text-decoration: none;
+}
+.tips-content{
+    position: relative;
+}
+.description{
+    display: none;
+    position: relative;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+#tips a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+/*TENT*/
+#gear-reviews h2{
+    display: flex;
+    justify-content: center;
+}
+#tents h3,#boots h3,#backpacks h3{
+    display: flex;
+    justify-content: center;
+}
+.tent-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.tent-container a {
+    width: 20%; 
+    display: flex;
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; 
+    border: 2px solid black;
+}
+.tent-container img {
+    display: block; 
+    width: 100%; 
+    height: auto;
+}
+.tent-container footer {
+    background-color: orangered; 
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0; 
+}
+/*BOOTS*/
+.boots-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.boots-container a{
+    width: 20%; 
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    overflow: hidden;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.boots-container img{
+    display: block;
+    width: 100%; 
+    height: auto; 
+    flex-shrink: 0; 
+}
+.boots-container footer{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute; /* Position footer at the bottom of the link */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/*BACKPACKS*/
+.backpacks-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.backpacks-container a{
+    width: 20%; 
+    display: flex;
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; 
+    border: 2px solid black;
+}
+.backpacks-container img{
+    display: block; 
+    width: 100%;
+    height: auto;
+}
+.backpacks-container footer{
+    background-color: coral;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0; 
+}
+
+/*padding between sections*/
+section {
+    padding: 20px; 
+}
+
+/*Gallery photos*/
+.slideshow-container{
+    width: 100%;
+    margin:auto;
+    position: relative;
+}
+.slideshow-container img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+#gallery h2{
+    display: flex;
+    justify-content: center;
+}
+.photo-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 10px;
+}
+.photo-grid img{
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out,box-shadow 0.6s ease-in-out;
+    
+}   
+.photo-grid img:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 3px lightblue;
+}
+#slideshow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#review-form textarea{
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/*changing style based on screen size*/
+@media screen and (max-width: 600px) {
+    header h1 img{
+        height: 6vw;
+        width: 6vw;
+    }
+    header nav ul li {
+        display: block;
+        margin: 0;
+    }
+    .boots-container a, .backpacks-container a, .tent-container a {
+        position: relative; 
+        width: 100%; 
+        padding-bottom: 30px; 
+        display: block; 
+        margin-bottom: 2%; 
+    }
+
+    .boots-container img, .backpacks-container img, .tent-container img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .boots-container footer, .backpacks-container footer, .tent-container footer {
+        position: absolute;
+        bottom: 0; 
+        left: 0;
+        width: 100%; 
+        padding: 5px 0; 
+        background-color: red; 
+        color: white; 
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .boots-container a {
+        width: 48%; 
+
+    }
+}
+
+@media (min-width: 992px) {
+    .boots-container a {
+        width: 31%; 
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .boots-container a {
+        width: 20%; 
+
+    }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Oproiu Matei">
+    <meta name="description" content="Hiking website">
+    <meta name="keywords" content="hiking, trail, gear">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYTRAILS</title>
+    <link rel="stylesheet" href="/CSS/styles_main.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.webp">
+</head>
+<body>
+    <header>
+        <h1><img src="/images/favicon.webp" alt="Icon"> MYTRAILS</h1>
+        <button id="dark-mode-toggle" class="toggle-button">Dark Mode</button>
+        <h2>Plan your next adventur now!</h2>
+        <div id="current-date-time"></div>
+        <nav>
+            <ul>
+                <li><a href="#trails">Trails</a></li>
+                <li><a href="#tips">Hiking Tips</a></li>
+                <li class="dropdown">
+                    <a href="#gear-reviews" id="gear-reviews-link">Gear Reviews</a>
+                    <div class="dropdown-content" id="gear-reviews-dropdown">
+                        <a href="#tents">Tents</a>
+                        <a href="#boots">Boots</a>
+                        <a href="#backpacks">Backpacks</a>
+                    </div>
+                </li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="trails">
+        <h2>Featured Trails</h2>
+        <div class="trail-grid">
+            <!-- trails -->
+            <div id="trail-1" class="trail1">
+                <h3>Rarau peak</h3>
+                <p>The Rarau trail offers a captivating hike starting from a tranquil village at the mountain's foot, ascending through lush meadows to stark, majestic peaks. At the summit, breathtaking views reward hikers, giving a sense of the world at your feet. The journey continues down into a dense, untouched forest, where the only sounds are nature's symphony, highlighting the beauty of the wild.<a href="/HTML/Rarau_Trail.html" target="_blank">Click For more information</a>
+                </p>
+            </div>
+            <div id="trail-2" class="trail2">
+                <h3>Ineu peak</h3>
+                <p>Embark on a breathtaking hike that starts in a beautiful forest next to a murmuring river, leading you through a verdant landscape teeming with wildflowers. As you ascend, you'll discover a serene mountain lake, a mirror to the sky and surrounding peaks. The journey intensifies with a rocky climb, testing your resolve as you approach Ineu Peak, the region's highest point.<a href="/HTML/Ineu_Trail.html" target="_blank">Click For more information</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="tips">
+        <h2>Hiking Tips</h2>
+        <h3>Before You Go</h3>
+        <div class="tips-content">
+            <ol>
+                <li><a href="#" data-target="research">Research your trail</a></li>
+                <li><a href="#" data-target="weather">Check the weather</a></li>
+                <li><a href="#" data-target="pack">Pack Smart</a></li>
+                <li><a href="#" data-target="inform">Inform someone</a></li>
+            </ol>
+            <div id="research" class="description">Study the trail's length, difficulty, weather conditions, and any wildlife you might encounter. Check recent reviews for any alerts or advice from fellow hikers.</div>
+            <div id="weather" class="description">Weather can change rapidly, especially in mountainous areas. Be prepared for all conditions.</div>
+            <div id="pack" class="description">Essentials include water, snacks, a map and compass (or a GPS device), a first-aid kit, a flashlight or headlamp, sun protection (sunscreen, hat, sunglasses), and appropriate clothing.</div>
+            <div id="inform" class="description">Always let someone know where you're going and when you expect to return. This is crucial for your safety.</div>
+    
+            <h3>Gear and Clothing</h3>
+            <ol>
+                <li><a href="#" data-target="shoes">Wear the Right Shoes</a></li>
+                <li><a href="#" data-target="layers">Dress in Layers</a></li>
+                <li><a href="#" data-target="backpack">Pack a Lightweight Backpack</a></li>
+            </ol>
+            <div id="shoes" class="description">Invest in a good pair of hiking boots or shoes with support and traction to handle rough terrain.</div>
+            <div id="layers" class="description">Conditions can change quickly, so wear multiple layers that you can add or remove as needed.</div>
+            <div id="backpack" class="description">Choose a backpack that fits well and isn't too bulky. Ensure it has enough space for your essentials but doesn’t tempt you to overpack.</div>
+    
+            <h3>On the Trail</h3>
+            <ol>
+                <li><a href="#" data-target="stay">Stay on Marked Trails</a></li>
+                <li><a href="#" data-target="leave">Leave No Trace</a></li>
+                <li><a href="#" data-target="pace">Pace Yourself</a></li>
+                <li><a href="#" data-target="hydrated">Stay Hydrated and Energized</a></li>
+            </ol>
+            <div id="stay" class="description">Protect the environment and yourself by sticking to the path. Going off-trail can lead to erosion and habitat destruction.</div>
+            <div id="leave" class="description">Take all trash with you, don't feed wildlife, and minimize your impact on the surroundings.</div>
+            <div id="pace" class="description">Start slow to warm up and avoid overexertion. It's not a race; enjoy the journey and the scenery.</div>
+            <div id="hydrated" class="description">Drink water regularly and eat snacks to keep your energy up.</div>
+    
+            <h3>Safety Tips</h3>
+            <ol>
+                <li><a href="#" data-target="limits">Know Your Limits</a></li>
+                <li><a href="#" data-target="wildlife">Be Wildlife Aware</a></li>
+                <li><a href="#" data-target="first-aid">First-Aid Basics</a></li>
+            </ol>
+            <div id="limits" class="description">Don’t push yourself too hard, especially at high altitudes or on difficult terrain. It's okay to turn back if you need to.</div>
+            <div id="wildlife" class="description">Learn about the wildlife in the area and how to behave if you encounter any animals.</div>
+            <div id="first-aid" class="description">Know how to treat minor injuries. Consider taking a wilderness first aid course if you plan on doing more remote or challenging hikes.</div>
+    
+            <h3>After the Hike</h3>
+            <ol>
+                <li><a href="#" data-target="check">Post-Hike Check</a></li>
+                <li><a href="#" data-target="refuel">Rehydrate and Refuel</a></li>
+                <li><a href="#" data-target="share">Share Your Experience</a></li>
+            </ol>
+            <div id="check" class="description">Check yourself for ticks and any injuries you might not have noticed during the hike.</div>
+            <div id="refuel" class="description">Drink plenty of water and eat a balanced meal to help your body recover.</div>
+            <div id="share" class="description">Posting about your hike on social media or a blog can provide valuable insights and inspiration to other hikers.</div>
+        </div>
+    </section>    
+    <section id="gear-reviews">
+        <h2>Gear Reviews</h2>
+        <!-- Gear categories are linked through the dropdown menu -->
+        <section id="tents">
+            <h3>Tents</h3>
+            <div class="tent-container">
+                <a href="Trimm_Largo_D.html" target="_blank">
+                    <img src="/images/Gear/Tent_Trimm_Largo_D.webp" alt="Trimm_Largo_D">
+                    <footer>Trimm Largo D</footer>
+                </a>
+                <a href="Rocktrail_Camping_Hammock.html" target="_blank">
+                    <img src="/images/Gear/Rocktrail_Camping_Hammock.webp" alt="Rocktrail_Camping_hammock">
+                    <footer>Rocktrail Camping Hammock</footer>
+                </a>
+            </div>
+        </section>
+        <section id="boots">
+            <h3>Boots</h3>
+            <div class="boots-container">
+                <a href="Trekking_M_Hedgehog_Futurelight.html" target="_blank">
+                    <img src="/images/Gear/The_North_Face_trekking_boots.webp" alt="Trekking_M_Hedgehog_futurelight">
+                    <footer>Trekking M Hedgehog Futurelight</footer>
+                </a>
+                <a href="Hoka_Challenger_ATR_7.html" target="_blank">
+                    <img src="/images/Gear/Hoka_challenger.webp" alt="Hoka_Challenger_ATR_7">
+                    <footer>Hoka Challenger ATR 7</footer>
+                </a>
+            </div>
+        </section>
+        <section id="backpacks">
+            <h3>Backpacks</h3>
+            <div class="backpacks-container">
+                <a href="Osprey_Skarab_18.html" target="_blank">
+                    <img src="/images/Gear/Ospray_Skarab_18.webp" alt="Osprey_Skarab_18">
+                    <footer>Ospray Skarab 18</footer>
+                </a>
+                <a href="Quechua_MH500_20L.html" target="_blank">
+                    <img src="/images/Gear/Quechua_Backcpack.webp" alt="Quechua_MH500_20L">
+                    <footer>Quechua MH500 20L</footer>
+                </a>
+            </div>
+        </section>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div id="slideshow" class="slideshow-container">
+            <img id="slideshow-image" src="/images/Photos/varf_panorama1.JPG" alt="Slideshow Image">
+        </div>
+        <div class="photo-grid">
+            <!-- Photos from hikes -->
+            <img src="/images/Photos/obiective-masivul-rarau-06.JPG" alt="stanci">
+            <img src="/images/Photos/masivul-rarau.JPG" alt="Stanci_rarau">
+            <img src="/images/Photos/cai.JPG" alt="cai">
+            <img src="/images/Photos/coborare_lala.JPG" alt="coborare_lala">
+            <img src="/images/Photos/drum_lala.JPG" alt="drum">
+            <img src="/images/Photos/urcare_lala.JPG" alt="urcare_lala">
+            <img src="/images/Photos/parau_lala.JPG" alt="parau_lala">
+            <img src="/images/Photos/lac_lala.JPG" alt="lac_lala">
+            <img src="/images/Photos/urcare_varf_lala.JPG" alt="urcare_varf_lala">
+            <img src="/images/Photos/varf_panorama1.JPG" alt="varf_panorama1">
+            <img src="/images/Photos/varf_panorama2.JPG" alt="varf_panorama2">
+            <img src="/images/Photos/varf_panorama3.JPG" alt="varf_panorama3">
+            <img src="/images/Photos/varf_panorama4.JPG" alt="varf_panorama4">
+        </div>
+    </section>
+    <section id="reviews">
+        <h2>Leave a Review</h2>
+        <form id="review-form">
+            <label for="trail-select">Select Trail:</label>
+            <select id="trail-select">
+                <option value="Rarau Peak">Rarau Peak</option>
+                <option value="Ineu Peak">Ineu Peak</option>
+            </select>
+            <label for="review-text">Your Review:</label>
+            <textarea id="review-text" rows="4" cols="50"></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="review-display"></div>
+    </section>
+    <footer id="footer1">
+        <p>Oproiu Matei 2024</p>
+    </footer>
+</main>
+    <script src="/JS/script.js"></script>
+</body>
+</html>

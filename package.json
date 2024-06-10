@@ -1,0 +1,16 @@
+{
+  "name": "web-design-project",
+  "version": "1.0.0",
+  "description": "A web design project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node JS/app.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "formidable": "^3.5.1",
+    "fs": "^0.0.1-security"
+  }
+}
